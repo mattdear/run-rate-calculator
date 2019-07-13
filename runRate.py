@@ -1,7 +1,7 @@
 #!/bin/python
 
 #Run Rate Calculator by Matthew Dear
-#Version 1.6
+#Version 1.6.1
 
 firstInningsTotal = 0.00
 inGame = "y"
@@ -10,7 +10,7 @@ print("\nWelcome to the run rate calculator... by Matthew Dear")
 
 while True:
     try:
-        isFirstInnings = str.lower((input("First innings? (y/n) ")))
+        isFirstInnings = str.lower((input("\nFirst innings? (y/n) ")))
     except ValueError:
         print("Invalid please try again.")
 
@@ -23,7 +23,7 @@ gameLength = 0
 
 while True:
     try:
-        gameLength = int(input("Game length? (20/50) "))
+        gameLength = int(input("\nGame length? (20/50) "))
     except ValueError:
         print("Invalid please try again.")
     
@@ -55,7 +55,7 @@ if isFirstInnings == "y":
 
         while True:
             try:        
-                oversUsed = float(input("Overs used? "))
+                oversUsed = float(input("\nOvers used? "))
             except ValueError:
                 print("Invalid please try again.")
 
@@ -69,7 +69,7 @@ if isFirstInnings == "y":
         
         while True:
             try:
-                inGame = str.lower(input("update? (y/n) "))
+                inGame = str.lower(input("\nupdate? (y/n) "))
             except ValueError:
                 print("Invalid please try again.")
 
@@ -104,7 +104,7 @@ else:
 
             while True:
                 try:
-                    currentRuns = float(input("Current run total? "))
+                    currentRuns = float(input("\nCurrent run total? "))
                 except ValueError:
                     print("Invalid please try again.")
 
@@ -117,7 +117,7 @@ else:
 
             while True:
                 try:        
-                    oversUsed = float(input("Overs used? "))
+                    oversUsed = float(input("\nOvers used? "))
                 except ValueError:
                     print("Invalid please try again.")
 
@@ -133,7 +133,7 @@ else:
             
             while True:
                 try:
-                    inGame = str.lower(input("update? (y/n) "))
+                    inGame = str.lower(input("\nupdate? (y/n) "))
                 except ValueError:
                     print("Invalid please try again.")
 
