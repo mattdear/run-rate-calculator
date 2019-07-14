@@ -1,7 +1,7 @@
 #!/bin/python
 
 #Run Rate Calculator by Matthew Dear
-#Version 1.6.1
+#Version 1.6.2
 
 firstInningsTotal = 0.00
 inGame = "y"
@@ -38,19 +38,6 @@ if isFirstInnings == "y":
 
     while inGame == "y":
 
-        currentRuns = 0.00
-
-        while True:
-            try:
-                currentRuns = float(input("\nCurrent run total? "))
-            except ValueError:
-                print("Invalid please try again.")
-
-            if currentRuns <= 0:
-                print("Invalid please try again.")
-            else:
-                break
-
         oversUsed = 0.00
 
         while True:
@@ -60,6 +47,19 @@ if isFirstInnings == "y":
                 print("Invalid please try again.")
 
             if oversUsed <= 0:
+                print("Invalid please try again.")
+            else:
+                break
+
+        currentRuns = 0.00
+
+        while True:
+            try:
+                currentRuns = float(input("\nCurrent run total? "))
+            except ValueError:
+                print("Invalid please try again.")
+
+            if currentRuns <= 0:
                 print("Invalid please try again.")
             else:
                 break
@@ -100,19 +100,6 @@ else:
 
         else:
 
-            currentRuns = 0.00
-
-            while True:
-                try:
-                    currentRuns = float(input("\nCurrent run total? "))
-                except ValueError:
-                    print("Invalid please try again.")
-
-                if currentRuns <= 0:
-                    print("Invalid please try again.")
-                else:
-                    break
-
             oversUsed = 0.00    
 
             while True:
@@ -122,6 +109,19 @@ else:
                     print("Invalid please try again.")
 
                 if oversUsed <= 0:
+                    print("Invalid please try again.")
+                else:
+                    break
+
+            currentRuns = 0.00
+
+            while True:
+                try:
+                    currentRuns = float(input("\nCurrent run total? "))
+                except ValueError:
+                    print("Invalid please try again.")
+
+                if currentRuns <= 0:
                     print("Invalid please try again.")
                 else:
                     break
